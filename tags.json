@@ -1,0 +1,602 @@
+[
+    {
+        "tag": "9F01",
+        "name": "Acquirer Identifier",
+        "description": "Uniquely identifies the acquirer within each payment system"
+    },
+    {
+        "tag": "9F40",
+        "name": "Additional Terminal Capabilities",
+        "description": "Indicates the data input and output capabilities of the terminal"
+    },
+    {
+        "tag": "81",
+        "name": "Amount, Authorised (Binary)",
+        "description": "Authorised amount of the transaction (excluding adjustments)"
+    },
+    {
+        "tag": "9F02",
+        "name": "Amount, Authorised (Numeric)",
+        "description": "Authorised amount of the transaction (excluding adjustments)"
+    },
+    {
+        "tag": "9F04",
+        "name": "Amount, Other (Binary)",
+        "description": "Secondary amount associated with the transaction representing a cashback amount"
+    },
+    {
+        "tag": "9F03",
+        "name": "Amount, Other (Numeric)",
+        "description": "Secondary amount associated with the transaction representing a cashback amount"
+    },
+    {
+        "tag": "9F3A",
+        "name": "Amount, Reference Currency",
+        "description": "Authorised amount expressed in the reference currency"
+    },
+    {
+        "tag": "9F26",
+        "name": "Application Cryptogram",
+        "description": "Cryptogram returned by the ICC in response of the GENERATE AC command"
+    },
+    {
+        "tag": "9F42",
+        "name": "Application Currency Code",
+        "description": "Indicates the currency in which the account is managed according to ISO 4217"
+    },
+    {
+        "tag": "9F44",
+        "name": "Application Currency Exponent",
+        "description": "Indicates the implied position of the decimal point from the right of the amount represented according to ISO 4217"
+    },
+    {
+        "tag": "9F05",
+        "name": "Application Discretionary Data",
+        "description": "Issuer or payment system specified data relating to the application"
+    },
+    {
+        "tag": "5F25",
+        "name": "Application Effective Date",
+        "description": "Date from which the application may be used"
+    },
+    {
+        "tag": "5F24",
+        "name": "Application Expiration Date",
+        "description": "Date after which application expires"
+    },
+    {
+        "tag": "94",
+        "name": "Application File Locator (AFL)",
+        "description": "Indicates the location (SFI, range of records) of the AEFs related to a given application"
+    },
+    {
+        "tag": "4F",
+        "name": "Application Identifier (AID) – card",
+        "description": "Identifies the application as described in ISO/IEC 7816-5"
+    },
+    {
+        "tag": "9F06",
+        "name": "Application Identifier (AID) – terminal",
+        "description": "Identifies the application as described in ISO/IEC 7816-5"
+    },
+    {
+        "tag": "82",
+        "name": "Application Interchange Profile",
+        "description": "Indicates the capabilities of the card to support specific functions in the application"
+    },
+    {
+        "tag": "50",
+        "name": "Application Label",
+        "description": "Mnemonic associated with the AID according to ISO/IEC 7816-5"
+    },
+    {
+        "tag": "9F12",
+        "name": "Application Preferred Name",
+        "description": "Preferred mnemonic associated with the AID"
+    },
+    {
+        "tag": "5A",
+        "name": "Application Primary Account Number (PAN)",
+        "description": "Valid cardholder account number"
+    },
+    {
+        "tag": "5F34",
+        "name": "Application Primary Account Number (PAN) Sequence Number",
+        "description": "Identifies and differentiates cards with the same PAN"
+    },
+    {
+        "tag": "87",
+        "name": "Application Priority Indicator",
+        "description": "Indicates the priority of a given application or group of applications in a directory"
+    },
+    {
+        "tag": "9F3B",
+        "name": "Application Reference Currency",
+        "description": "1–4 currency codes used between the terminal and the ICC when the Transaction Currency Code is different from the Application Currency Code; each code is 3 digits according to ISO 4217"
+    },
+    {
+        "tag": "9F43",
+        "name": "Application Reference Currency Exponent",
+        "description": "Indicates the implied position of the decimal point from the right of the amount, for each of the 1–4 reference currencies represented according to ISO 4217"
+    },
+    {
+        "tag": "61",
+        "name": "Application Template",
+        "description": "Contains one or more data objects relevant to an application directory entry according to ISO/IEC 7816-5"
+    },
+    {
+        "tag": "9F36",
+        "name": "Application Transaction Counter (ATC)",
+        "description": "Counter maintained by the application in the ICC (incrementing the ATC is managed by the ICC)"
+    },
+    {
+        "tag": "9F07",
+        "name": "Application Usage Control",
+        "description": "Indicates issuer’s specified restrictions on the geographic usage and services allowed for the application"
+    },
+    {
+        "tag": "9F08",
+        "name": "Application Version Number",
+        "description": "Version number assigned by the payment system for the application"
+    },
+    {
+        "tag": "9F09",
+        "name": "Application Version Number",
+        "description": "Version number assigned by the payment system for the application"
+    },
+    {
+        "tag": "89",
+        "name": "Authorisation Code",
+        "description": "Value generated by the authorisation authority for an approved transaction"
+    },
+    {
+        "tag": "8A",
+        "name": "Authorisation Response Code",
+        "description": "Code that defines the disposition of a message"
+    },
+    {
+        "tag": "5F54",
+        "name": "Bank Identifier Code (BIC)",
+        "description": "Uniquely identifies a bank as defined in ISO 9362."
+    },
+    {
+        "tag": "8C",
+        "name": "Card Risk Management Data Object List 1 (CDOL1)",
+        "description": "List of data objects (tag and length) to be passed to the ICC in the first GENERATE AC command"
+    },
+    {
+        "tag": "8D",
+        "name": "Card Risk Management Data Object List 2 (CDOL2)",
+        "description": "List of data objects (tag and length) to be passed to the ICC in the second GENERATE AC command"
+    },
+    {
+        "tag": "5F20",
+        "name": "Cardholder Name",
+        "description": "Indicates cardholder name according to ISO 7813"
+    },
+    {
+        "tag": "9F0B",
+        "name": "Cardholder Name Extended",
+        "description": "Indicates the whole cardholder name when greater than 26 characters using the same coding convention as in ISO 7813"
+    },
+    {
+        "tag": "8E",
+        "name": "Cardholder Verification Method (CVM) List",
+        "description": "Identifies a method of verification of the cardholder supported by the application"
+    },
+    {
+        "tag": "9F34",
+        "name": "Cardholder Verification Method (CVM) Results",
+        "description": "Indicates the results of the last CVM performed"
+    },
+    {
+        "tag": "8F",
+        "name": "Certification Authority Public Key Index",
+        "description": "Identifies the certification authority’s public key in conjunction with the RID"
+    },
+    {
+        "tag": "9F22",
+        "name": "Certification Authority Public Key Index",
+        "description": "Identifies the certification authority’s public key in conjunction with the RID"
+    },
+    {
+        "tag": "83",
+        "name": "Command Template",
+        "description": "Identifies the data field of a command message"
+    },
+    {
+        "tag": "9F27",
+        "name": "Cryptogram Information Data",
+        "description": "Indicates the type of cryptogram and the actions to be performed by the terminal"
+    },
+    {
+        "tag": "9F45",
+        "name": "Data Authentication Code",
+        "description": "An issuer assigned value that is retained by the terminal during the verification process of the Signed Static Application Data"
+    },
+    {
+        "tag": "84",
+        "name": "Dedicated File (DF) Name",
+        "description": "Identifies the name of the DF as described in ISO/IEC 7816-4"
+    },
+    {
+        "tag": "9D",
+        "name": "Directory Definition File (DDF) Name",
+        "description": "Identifies the name of a DF associated with a directory"
+    },
+    {
+        "tag": "73",
+        "name": "Directory Discretionary Template",
+        "description": "Issuer discretionary part of the directory according to ISO/IEC 7816-5"
+    },
+    {
+        "tag": "9F49",
+        "name": "Dynamic Data Authentication Data Object List (DDOL)",
+        "description": "List of data objects (tag and length) to be passed to the ICC in the INTERNAL AUTHENTICATE command"
+    },
+    {
+        "tag": "70",
+        "name": "EMV Proprietary Template",
+        "description": "Template proprietary to the EMV specification"
+    },
+    {
+        "tag": "BF0C",
+        "name": "File Control Information (FCI) Issuer Discretionary Data",
+        "description": "Issuer discretionary part of the FCI"
+    },
+    {
+        "tag": "A5",
+        "name": "File Control Information (FCI) Proprietary Template",
+        "description": "Identifies the data object proprietary to this specification in the FCI template according to ISO/IEC 7816-4"
+    },
+    {
+        "tag": "6F",
+        "name": "File Control Information (FCI) Template",
+        "description": "Identifies the FCI template according to ISO/IEC 7816-4"
+    },
+    {
+        "tag": "9F4C",
+        "name": "ICC Dynamic Number",
+        "description": "Time-variant number generated by the ICC, to be captured by the terminal"
+    },
+    {
+        "tag": "9F2D",
+        "name": "Integrated Circuit Card (ICC) PIN Encipherment Public Key Certificate",
+        "description": "ICC PIN Encipherment Public Key certified by the issuer"
+    },
+    {
+        "tag": "9F2E",
+        "name": "Integrated Circuit Card (ICC) PIN Encipherment Public Key Exponent",
+        "description": "ICC PIN Encipherment Public Key Exponent used for PIN encipherment"
+    },
+    {
+        "tag": "9F2F",
+        "name": "Integrated Circuit Card (ICC) PIN Encipherment Public Key Remainder",
+        "description": "Remaining digits of the ICC PIN Encipherment Public Key Modulus"
+    },
+    {
+        "tag": "9F46",
+        "name": "Integrated Circuit Card (ICC) Public Key Certificate",
+        "description": "ICC Public Key certified by the issuer"
+    },
+    {
+        "tag": "9F47",
+        "name": "Integrated Circuit Card (ICC) Public Key Exponent",
+        "description": "ICC Public Key Exponent used for the verification of the Signed Dynamic Application Data"
+    },
+    {
+        "tag": "9F48",
+        "name": "Integrated Circuit Card (ICC) Public Key Remainder",
+        "description": "Remaining digits of the ICC Public Key Modulus"
+    },
+    {
+        "tag": "9F1E",
+        "name": "Interface Device (IFD) Serial Number",
+        "description": "Unique and permanent serial number assigned to the IFD by the manufacturer"
+    },
+    {
+        "tag": "5F53",
+        "name": "International Bank Account Number (IBAN)",
+        "description": "Uniquely identifies the account of a customer at a financial institution as defined in ISO 13616."
+    },
+    {
+        "tag": "9F0D",
+        "name": "Issuer Action Code – Default",
+        "description": "Specifies the issuer’s conditions that cause a transaction to be rejected if it might have been approved online, but the terminal is unable to process the transaction online"
+    },
+    {
+        "tag": "9F0E",
+        "name": "Issuer Action Code – Denial",
+        "description": "Specifies the issuer’s conditions that cause the denial of a transaction without attempt to go online"
+    },
+    {
+        "tag": "9F0F",
+        "name": "Issuer Action Code – Online",
+        "description": "Specifies the issuer’s conditions that cause a transaction to be transmitted online"
+    },
+    {
+        "tag": "9F10",
+        "name": "Issuer Application Data",
+        "description": "Contains proprietary application data for transmission to the issuer in an online transaction"
+    },
+    {
+        "tag": "91",
+        "name": "Issuer Authentication Data",
+        "description": "Data sent to the ICC for online issuer authentication"
+    },
+    {
+        "tag": "9F11",
+        "name": "Issuer Code Table Index",
+        "description": "Indicates the code table according to ISO/IEC 8859 for displaying the Application Preferred Name"
+    },
+    {
+        "tag": "5F28",
+        "name": "Issuer Country Code",
+        "description": "Indicates the country of the issuer according to ISO 3166"
+    },
+    {
+        "tag": "5F55",
+        "name": "Issuer Country Code (alpha2 format)",
+        "description": "Indicates the country of the issuer as defined in ISO 3166 (using a 2 character alphabetic code)"
+    },
+    {
+        "tag": "5F56",
+        "name": "Issuer Country Code (alpha3 format)",
+        "description": "Indicates the country of the issuer as defined in ISO 3166 (using a 3 character alphabetic code)"
+    },
+    {
+        "tag": "42",
+        "name": "Issuer Identification Number (IIN)",
+        "description": "The number that identifies the major industry and the card issuer and that forms the first part of the Primary Account Number (PAN)"
+    },
+    {
+        "tag": "90",
+        "name": "Issuer Public Key Certificate",
+        "description": "Issuer public key certified by a certification authority"
+    },
+    {
+        "tag": "9F32",
+        "name": "Issuer Public Key Exponent",
+        "description": "Issuer public key exponent used for theverification of the Signed Static Application Data and the ICC Public Key Certificate"
+    },
+    {
+        "tag": "92",
+        "name": "Issuer Public Key Remainder",
+        "description": "Remaining digits of the Issuer Public Key Modulus"
+    },
+    {
+        "tag": "86",
+        "name": "Issuer Script Command",
+        "description": "Contains a command for transmission to the ICC"
+    },
+    {
+        "tag": "9F18",
+        "name": "Issuer Script Identifier",
+        "description": "Identification of the Issuer Script"
+    },
+    {
+        "tag": "71",
+        "name": "Issuer Script Template 1",
+        "description": "Contains proprietary issuer data for transmission to the ICC before the second GENERATE AC command"
+    },
+    {
+        "tag": "72",
+        "name": "Issuer Script Template 2",
+        "description": "Contains proprietary issuer data for transmission to the ICC after the second GENERATE AC command"
+    },
+    {
+        "tag": "5F50",
+        "name": "Issuer URL",
+        "description": "The URL provides the location of the Issuer’s Library Server on the Internet."
+    },
+    {
+        "tag": "5F2D",
+        "name": "Language Preference",
+        "description": "1–4 languages stored in order of preference, each represented by 2 alphabetical characters according to ISO 639 Note: EMVCo strongly recommends that cards be personalised with data element '5F2D' coded in lowercase, but that terminals accept the data element whether it is coded in upper or lower case."
+    },
+    {
+        "tag": "9F13",
+        "name": "Last Online Application Transaction Counter (ATC) Register",
+        "description": "ATC value of the last transaction that went online"
+    },
+    {
+        "tag": "9F4D",
+        "name": "Log Entry",
+        "description": "Provides the SFI of the Transaction Log file and its number of records"
+    },
+    {
+        "tag": "9F4F",
+        "name": "Log Format",
+        "description": "List (in tag and length format) of data objects representing the logged data elements that are passed to the terminal when a transaction log record is read"
+    },
+    {
+        "tag": "9F14",
+        "name": "Lower Consecutive Offline Limit",
+        "description": "Issuer-specified preference for the maximum number of consecutive offline transactions for this ICC application allowed in a terminal with online capability"
+    },
+    {
+        "tag": "9F15",
+        "name": "Merchant Category Code",
+        "description": "Classifies the type of business being done by the merchant, represented according to ISO 8583:1993 for Card Acceptor Business Code"
+    },
+    {
+        "tag": "9F16",
+        "name": "Merchant Identifier",
+        "description": "When concatenated with the Acquirer Identifier, uniquely identifies a given merchant"
+    },
+    {
+        "tag": "9F4E",
+        "name": "Merchant Name and Location",
+        "description": "Indicates the name and location of the merchant"
+    },
+    {
+        "tag": "9F17",
+        "name": "Personal Identification Number (PIN) Try Counter",
+        "description": "Number of PIN tries remaining"
+    },
+    {
+        "tag": "9F39",
+        "name": "Point-of-Service (POS) Entry Mode",
+        "description": "Indicates the method by which the PAN was entered, according to the first two digits of the ISO 8583:1987 POS Entry Mode"
+    },
+    {
+        "tag": "9F38",
+        "name": "Processing Options Data Object List (PDOL)",
+        "description": "Contains a list of terminal resident data objects (tags and lengths) needed by the ICC in processing the GET PROCESSING OPTIONS command"
+    },
+    {
+        "tag": "80",
+        "name": "Response Message Template Format 1",
+        "description": "Contains the data objects (without tags and lengths) returned by the ICC in response to a command"
+    },
+    {
+        "tag": "77",
+        "name": "Response Message Template Format 2",
+        "description": "Contains the data objects (with tags and lengths) returned by the ICC in response to a command"
+    },
+    {
+        "tag": "5F30",
+        "name": "Service Code",
+        "description": "Service code as defined in ISO/IEC 7813 for track 1 and track 2"
+    },
+    {
+        "tag": "88",
+        "name": "Short File Identifier (SFI)",
+        "description": "Identifies the SFI to be used in the commands related to a given AEF or DDF. The SFI data object is a binary field with the three high order bits set to zero."
+    },
+    {
+        "tag": "9F4B",
+        "name": "Signed Dynamic Application Data",
+        "description": "Digital signature on critical application parameters for DDA or CDA"
+    },
+    {
+        "tag": "93",
+        "name": "Signed Static Application Data",
+        "description": "Digital signature on critical application parameters for SDA"
+    },
+    {
+        "tag": "9F4A",
+        "name": "Static Data Authentication Tag List",
+        "description": "List of tags of primitive data objects defined in this specification whose value fields are to be included in the Signed Static or Dynamic Application Data"
+    },
+    {
+        "tag": "9F33",
+        "name": "Terminal Capabilities",
+        "description": "Indicates the card data input, CVM, and security capabilities of the terminal"
+    },
+    {
+        "tag": "9F1A",
+        "name": "Terminal Country Code",
+        "description": "Indicates the country of the terminal, represented according to ISO 3166"
+    },
+    {
+        "tag": "9F1B",
+        "name": "Terminal Floor Limit",
+        "description": "Indicates the floor limit in the terminal in conjunction with the AID"
+    },
+    {
+        "tag": "9F1C",
+        "name": "Terminal Identification",
+        "description": "Designates the unique location of a terminal at a merchant"
+    },
+    {
+        "tag": "9F1D",
+        "name": "Terminal Risk Management Data",
+        "description": "Application-specific value used by the card for risk management purposes"
+    },
+    {
+        "tag": "9F35",
+        "name": "Terminal Type",
+        "description": "Indicates the environment of the terminal, its communications capability, and its operational control"
+    },
+    {
+        "tag": "95",
+        "name": "Terminal Verification Results",
+        "description": "Status of the different functions as seen from the terminal"
+    },
+    {
+        "tag": "9F1F",
+        "name": "Track 1 Discretionary Data",
+        "description": "Discretionary part of track 1 according to ISO/IEC 7813"
+    },
+    {
+        "tag": "9F20",
+        "name": "Track 2 Discretionary Data",
+        "description": "Discretionary part of track 2 according to ISO/IEC 7813"
+    },
+    {
+        "tag": "57",
+        "name": "Track 2 Equivalent Data",
+        "description": "Contains the data elements of track 2 according to ISO/IEC 7813, excluding start sentinel, end sentinel, and Longitudinal Redundancy Check (LRC), as follows: Primary Account Number (n, var. up to 19) Field Separator (Hex 'D') (b) Expiration Date (YYMM) (n 4) Service Code (n 3) Discretionary Data (defined by individual payment systems) (n, var.) Pad with one Hex 'F' if needed to ensure whole bytes (b)"
+    },
+    {
+        "tag": "98",
+        "name": "Transaction Certificate (TC) Hash Value",
+        "description": "Result of a hash function specified in Book 2, Annex B3.1"
+    },
+    {
+        "tag": "97",
+        "name": "Transaction Certificate Data Object List (TDOL)",
+        "description": "List of data objects (tag and length) to be used by the terminal in generating the TC Hash Value"
+    },
+    {
+        "tag": "5F2A",
+        "name": "Transaction Currency Code",
+        "description": "Indicates the currency code of the transaction according to ISO 4217"
+    },
+    {
+        "tag": "5F36",
+        "name": "Transaction Currency Exponent",
+        "description": "Indicates the implied position of the decimal point from the right of the transaction amount represented according to ISO 4217"
+    },
+    {
+        "tag": "9A",
+        "name": "Transaction Date",
+        "description": "Local date that the transaction was authorised"
+    },
+    {
+        "tag": "99",
+        "name": "Transaction Personal Identification Number (PIN) Data",
+        "description": "Data entered by the cardholder for the purpose of the PIN verification"
+    },
+    {
+        "tag": "9F3C",
+        "name": "Transaction Reference Currency Code",
+        "description": "Code defining the common currency used by the terminal in case the Transaction Currency Code is different from the Application Currency Code"
+    },
+    {
+        "tag": "9F3D",
+        "name": "Transaction Reference Currency Exponent",
+        "description": "Indicates the implied position of the decimal point from the right of the transaction amount, with the Transaction Reference Currency Code represented according to ISO 4217"
+    },
+    {
+        "tag": "9F41",
+        "name": "Transaction Sequence Counter",
+        "description": "Counter maintained by the terminal that is incremented by one for each transaction"
+    },
+    {
+        "tag": "9B",
+        "name": "Transaction Status Information",
+        "description": "Indicates the functions performed in a transaction"
+    },
+    {
+        "tag": "9F21",
+        "name": "Transaction Time",
+        "description": "Local time that the transaction was authorised"
+    },
+    {
+        "tag": "9C",
+        "name": "Transaction Type",
+        "description": "Indicates the type of financial transaction, represented by the first two digits of ISO 8583:1987 Processing Code"
+    },
+    {
+        "tag": "9F37",
+        "name": "Unpredictable Number",
+        "description": "Value to provide variability and uniqueness to the generation of a cryptogram"
+    },
+    {
+        "tag": "9F23",
+        "name": "Upper Consecutive Offline Limit",
+        "description": "Issuer-specified preference for the maximum number of consecutive offline transactions for this ICC application allowed in a terminal without online capability"
+    }
+]
