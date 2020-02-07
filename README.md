@@ -4,6 +4,8 @@
 be used by payment system researchers and practitioners to read TLV data (both
 binary and hex-encoded) in a formatted, organised way.
 
+<p align="center"><img width="682" alt="Screen Shot 2020-02-07 at 7 18 28 PM" src="https://user-images.githubusercontent.com/77198/74070063-afd8a680-49de-11ea-8487-bde93a9f47b3.png"></p>
+
 ## Usage
 
 ```
